@@ -49,16 +49,16 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        map.createPane('pane_OSM_0');
-        map.getPane('pane_OSM_0').style.zIndex = 400;
-        var layer_OSM_0 = L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            pane: 'pane_OSM_0',
+        map.createPane('pane_Positron_0');
+        map.getPane('pane_Positron_0').style.zIndex = 400;
+        var layer_Positron_0 = L.tileLayer('https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            pane: 'pane_Positron_0',
             opacity: 1.0,
-            attribution: '',
-            minZoom: 6,
-            maxZoom: 23,
+            attribution: '<a href="https://cartodb.com/basemaps/">Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL.</a>',
+            minZoom: 7,
+            maxZoom: 19,
             minNativeZoom: 0,
-            maxNativeZoom: 18
+            maxNativeZoom: 20
         });
         layer_OSM_0;
         map.addLayer(layer_OSM_0);
